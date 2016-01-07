@@ -1,0 +1,2854 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes"?>
+<HvParamDoc version="1.0">
+  <HvParam>
+    <SECTION name="System" cname=" ">
+      <KEY name="LogLevel">
+        <VALUE type="ENUM">1</VALUE>
+        <CHNAME type="STR"/>
+        <COMMENT type="STR">0:错误等级;1:常规等级;2:操作等级;3:调试等级</COMMENT>
+        <DEFAULT type="INT">1</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">3</MAX>
+        <RANK type="INT">3</RANK>
+        <ENUM type="STR">0:错误等级;1:常规等级;2:操作等级;3:调试等级</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="CommDevNo">
+        <VALUE type="STR">VECAM-D01-LS14014138</VALUE>
+        <CHNAME type="STR">设备编号</CHNAME>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">1</ONLYREAD>
+      </KEY>
+      <SECTION name="Build" cname="编译">
+        <KEY name="Module No.">
+          <VALUE type="STR">Algorithm:118
+BasicModule:118
+SWFC:118
+PlatformAPI:118
+App:137
+Config:118
+FileSystem:118
+Plugin:118
+</VALUE>
+          <CHNAME type="STR">模块版本号</CHNAME>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">1</ONLYREAD>
+        </KEY>
+        <KEY name="Firmware No.">
+          <VALUE type="STR">NULL</VALUE>
+          <CHNAME type="STR">固件版本号</CHNAME>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">1</ONLYREAD>
+        </KEY>
+        <KEY name="No.">
+          <VALUE type="STR">3.1.200.137</VALUE>
+          <CHNAME type="STR">软件版本号</CHNAME>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">1</ONLYREAD>
+        </KEY>
+      </SECTION>
+      <SECTION name="TcpipCfg" cname="网络配置">
+        <KEY name="CommIPAddr">
+          <VALUE type="STR">172.18.100.138</VALUE>
+          <CHNAME type="STR">IP地址</CHNAME>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">1</ONLYREAD>
+        </KEY>
+        <KEY name="CommMask">
+          <VALUE type="STR">255.255.0.0</VALUE>
+          <CHNAME type="STR">子网掩码</CHNAME>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">1</ONLYREAD>
+        </KEY>
+        <KEY name="CommGateway">
+          <VALUE type="STR">172.18.111.1</VALUE>
+          <CHNAME type="STR">网关</CHNAME>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">1</ONLYREAD>
+        </KEY>
+        <KEY name="CommMac">
+          <VALUE type="STR">0c:f4:05:22:70:2a</VALUE>
+          <CHNAME type="STR">MAC地址</CHNAME>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">1</ONLYREAD>
+        </KEY>
+      </SECTION>
+      <SECTION name="TcpIpCfgEx" cname=" ">
+        <KEY name="UseExtIP">
+          <VALUE type="INT">0</VALUE>
+          <CHNAME type="STR">是否使用备用IP</CHNAME>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="CommIPAddrEx">
+          <VALUE type="STR">10.100.100.101</VALUE>
+          <CHNAME type="STR">备用IP地址</CHNAME>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="CommMaskEx">
+          <VALUE type="STR">255.0.0.0</VALUE>
+          <CHNAME type="STR">备用子网掩码</CHNAME>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="CommGatewayEx">
+          <VALUE type="STR">10.100.1.1</VALUE>
+          <CHNAME type="STR">备用网关</CHNAME>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+      </SECTION>
+    </SECTION>
+    <SECTION name="Tracker" cname=" ">
+      <SECTION name="ProcessPlate" cname=" ">
+        <KEY name="EnableDBGreenSegment">
+          <VALUE type="ENUM">0</VALUE>
+          <CHNAME type="STR">绿牌识别开关</CHNAME>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">3</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="LightBlueFlag">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR">浅蓝牌开关</CHNAME>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">3</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="EnableBigPlate">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR">大牌识别开关</CHNAME>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">3</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="EnablePlateEnhance">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR">分割前是否进行图片增强</CHNAME>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">3</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="EnableProcessBWPlate">
+          <VALUE type="ENUM">0</VALUE>
+          <CHNAME type="STR">是否处理半黑半白牌</CHNAME>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">3</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="PlateResizeThreshold">
+          <VALUE type="INT">120</VALUE>
+          <CHNAME type="STR">分割前小图拉伸宽度阈值</CHNAME>
+          <DEFAULT type="INT">120</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">200</MAX>
+          <RANK type="INT">3</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <SECTION name="BlackPlate" cname=" ">
+          <KEY name="NightThreshold">
+            <VALUE type="INT">55</VALUE>
+            <CHNAME type="STR">夜晚模式亮度上限</CHNAME>
+            <DEFAULT type="INT">55</DEFAULT>
+            <MIN type="INT">0</MIN>
+            <MAX type="INT">240</MAX>
+            <RANK type="INT">3</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="PlateLightCheckCount">
+            <VALUE type="INT">5</VALUE>
+            <CHNAME type="STR">亮度调整间隔</CHNAME>
+            <DEFAULT type="INT">5</DEFAULT>
+            <MIN type="INT">3</MIN>
+            <MAX type="INT">50</MAX>
+            <RANK type="INT">3</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="MinPlateBrightness">
+            <VALUE type="INT">80</VALUE>
+            <CHNAME type="STR">车牌最低亮度</CHNAME>
+            <DEFAULT type="INT">80</DEFAULT>
+            <MIN type="INT">1</MIN>
+            <MAX type="INT">255</MAX>
+            <RANK type="INT">3</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="MaxPlateBrightness">
+            <VALUE type="INT">120</VALUE>
+            <CHNAME type="STR">车牌最高亮度</CHNAME>
+            <DEFAULT type="INT">120</DEFAULT>
+            <MIN type="INT">1</MIN>
+            <MAX type="INT">255</MAX>
+            <RANK type="INT">3</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="H0">
+            <VALUE type="INT">100</VALUE>
+            <CHNAME type="STR">蓝牌色度下限</CHNAME>
+            <DEFAULT type="INT">100</DEFAULT>
+            <MIN type="INT">0</MIN>
+            <MAX type="INT">240</MAX>
+            <RANK type="INT">3</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="H1">
+            <VALUE type="INT">200</VALUE>
+            <CHNAME type="STR">蓝牌色度上限</CHNAME>
+            <DEFAULT type="INT">200</DEFAULT>
+            <MIN type="INT">100</MIN>
+            <MAX type="INT">240</MAX>
+            <RANK type="INT">3</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="S">
+            <VALUE type="INT">10</VALUE>
+            <CHNAME type="STR">黑牌饱和度上限</CHNAME>
+            <DEFAULT type="INT">10</DEFAULT>
+            <MIN type="INT">0</MIN>
+            <MAX type="INT">240</MAX>
+            <RANK type="INT">3</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="L">
+            <VALUE type="INT">30</VALUE>
+            <CHNAME type="STR">黑牌亮度上限</CHNAME>
+            <DEFAULT type="INT">30</DEFAULT>
+            <MIN type="INT">0</MIN>
+            <MAX type="INT">240</MAX>
+            <RANK type="INT">3</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+        </SECTION>
+        <KEY name="SegWhitePlate">
+          <VALUE type="INT">0</VALUE>
+          <CHNAME type="STR">强制白牌分割</CHNAME>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">3</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="EnableColorReRecog">
+          <VALUE type="INT">3</VALUE>
+          <CHNAME type="STR">黑白灰重识别</CHNAME>
+          <DEFAULT type="INT">3</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">7</MAX>
+          <RANK type="INT">3</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="nBColorReThr">
+          <VALUE type="INT">20</VALUE>
+          <CHNAME type="STR">黑重识别阈值</CHNAME>
+          <DEFAULT type="INT">20</DEFAULT>
+          <MIN type="INT">-60</MIN>
+          <MAX type="INT">60</MAX>
+          <RANK type="INT">3</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="nWColorReThr">
+          <VALUE type="INT">150</VALUE>
+          <CHNAME type="STR">白重识别阈值</CHNAME>
+          <DEFAULT type="INT">150</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">240</MAX>
+          <RANK type="INT">3</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="nWGColorReThr">
+          <VALUE type="INT">60</VALUE>
+          <CHNAME type="STR">灰白重识别阈值</CHNAME>
+          <DEFAULT type="INT">60</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">240</MAX>
+          <RANK type="INT">3</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="EnableColorThr">
+          <VALUE type="INT">0</VALUE>
+          <CHNAME type="STR">灰黑控制开关</CHNAME>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">3</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="nBGColorThr">
+          <VALUE type="INT">25</VALUE>
+          <CHNAME type="STR">灰黑控制阈值</CHNAME>
+          <DEFAULT type="INT">25</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">240</MAX>
+          <RANK type="INT">3</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="nWGColorThr">
+          <VALUE type="INT">150</VALUE>
+          <CHNAME type="STR">灰白控制阈值</CHNAME>
+          <DEFAULT type="INT">150</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">240</MAX>
+          <RANK type="INT">3</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+      </SECTION>
+      <SECTION name="RoadInfo" cname=" ">
+        <KEY name="RoadLineNumber">
+          <VALUE type="INT">2</VALUE>
+          <CHNAME type="STR">车道线数量</CHNAME>
+          <DEFAULT type="INT">2</DEFAULT>
+          <MIN type="INT">2</MIN>
+          <MAX type="INT">2</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="StartRoadNumber">
+          <VALUE type="ENUM">0</VALUE>
+          <CHNAME type="STR">车道号起始编号</CHNAME>
+          <COMMENT type="STR">0:从0开始,1:从1开始,以此类推...</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">9</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:0;1:1;2:2;3:3;4:4;5:5;6:6;7:7;8:8;9:9</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <SECTION name="Road00" cname=" ">
+          <KEY name="TopX">
+            <VALUE type="INT">956</VALUE>
+            <CHNAME type="STR">顶X坐标</CHNAME>
+            <DEFAULT type="INT">1541</DEFAULT>
+            <MIN type="INT">0</MIN>
+            <MAX type="INT">5000</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="TopY">
+            <VALUE type="INT">526</VALUE>
+            <CHNAME type="STR">顶Y坐标</CHNAME>
+            <DEFAULT type="INT">304</DEFAULT>
+            <MIN type="INT">0</MIN>
+            <MAX type="INT">5000</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="BottomX">
+            <VALUE type="INT">446</VALUE>
+            <CHNAME type="STR">底X坐标</CHNAME>
+            <DEFAULT type="INT">481</DEFAULT>
+            <MIN type="INT">0</MIN>
+            <MAX type="INT">5000</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="BottomY">
+            <VALUE type="INT">800</VALUE>
+            <CHNAME type="STR">底Y坐标</CHNAME>
+            <DEFAULT type="INT">1066</DEFAULT>
+            <MIN type="INT">0</MIN>
+            <MAX type="INT">5000</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="LineType">
+            <VALUE type="INT">1</VALUE>
+            <CHNAME type="STR">类型</CHNAME>
+            <DEFAULT type="INT">1</DEFAULT>
+            <MIN type="INT">1</MIN>
+            <MAX type="INT">9999</MAX>
+            <RANK type="INT">3</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="RoadType">
+            <VALUE type="INT">15</VALUE>
+            <CHNAME type="STR">对应的车道类型</CHNAME>
+            <DEFAULT type="INT">15</DEFAULT>
+            <MIN type="INT">1</MIN>
+            <MAX type="INT">9999</MAX>
+            <RANK type="INT">3</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+        </SECTION>
+        <SECTION name="Road01" cname=" ">
+          <KEY name="TopX">
+            <VALUE type="INT">1793</VALUE>
+            <CHNAME type="STR">顶X坐标</CHNAME>
+            <DEFAULT type="INT">1666</DEFAULT>
+            <MIN type="INT">0</MIN>
+            <MAX type="INT">5000</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="TopY">
+            <VALUE type="INT">507</VALUE>
+            <CHNAME type="STR">顶Y坐标</CHNAME>
+            <DEFAULT type="INT">304</DEFAULT>
+            <MIN type="INT">0</MIN>
+            <MAX type="INT">5000</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="BottomX">
+            <VALUE type="INT">1741</VALUE>
+            <CHNAME type="STR">底X坐标</CHNAME>
+            <DEFAULT type="INT">1545</DEFAULT>
+            <MIN type="INT">0</MIN>
+            <MAX type="INT">5000</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="BottomY">
+            <VALUE type="INT">838</VALUE>
+            <CHNAME type="STR">底Y坐标</CHNAME>
+            <DEFAULT type="INT">1066</DEFAULT>
+            <MIN type="INT">0</MIN>
+            <MAX type="INT">5000</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="LineType">
+            <VALUE type="INT">1</VALUE>
+            <CHNAME type="STR">类型</CHNAME>
+            <DEFAULT type="INT">1</DEFAULT>
+            <MIN type="INT">1</MIN>
+            <MAX type="INT">9999</MAX>
+            <RANK type="INT">3</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="RoadType">
+            <VALUE type="INT">15</VALUE>
+            <CHNAME type="STR">对应的车道类型</CHNAME>
+            <DEFAULT type="INT">15</DEFAULT>
+            <MIN type="INT">1</MIN>
+            <MAX type="INT">9999</MAX>
+            <RANK type="INT">3</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+        </SECTION>
+      </SECTION>
+      <SECTION name="Recognition" cname=" ">
+        <KEY name="UseEdgeMethod">
+          <VALUE type="ENUM">0</VALUE>
+          <CHNAME type="STR">加强清晰图识别</CHNAME>
+          <COMMENT type="STR">0:不加强;1:加强</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">3</RANK>
+          <ENUM type="STR">0:不加强;1:加强</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="EnableT1Model">
+          <VALUE type="ENUM">0</VALUE>
+          <CHNAME type="STR">T-1模型开关</CHNAME>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">3</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="RecogAsteriskThreshold">
+          <VALUE type="INT">0</VALUE>
+          <CHNAME type="STR">得分低于阈值(百分比)用#表示</CHNAME>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">100</MAX>
+          <RANK type="INT">3</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="EnableRecogCarColor">
+          <VALUE type="ENUM">0</VALUE>
+          <CHNAME type="STR">车身颜色识别开关</CHNAME>
+          <COMMENT type="STR">0:关;1:开</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">3</RANK>
+          <ENUM type="STR">0:关;1:开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+      </SECTION>
+      <SECTION name="Misc" cname=" ">
+        <KEY name="EnableAlphaRecog">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR">黄牌字母识别开关</CHNAME>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">3</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="OutPutNoPlate">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR">无牌车识别开关</CHNAME>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="NoPlateMustStop">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR">无牌车必须停止才能出结果</CHNAME>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="ScanAreaTopOffset">
+          <VALUE type="INT">16</VALUE>
+          <CHNAME type="STR">检测区顶部离触发线百分比</CHNAME>
+          <DEFAULT type="INT">16</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">100</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="ScanAreaBottomOffset">
+          <VALUE type="INT">24</VALUE>
+          <CHNAME type="STR">检测区底部离触发线百分比</CHNAME>
+          <DEFAULT type="INT">24</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">100</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="RecogInVaildRatioTH">
+          <VALUE type="INT">80</VALUE>
+          <CHNAME type="STR">识别无效比例阈值</CHNAME>
+          <DEFAULT type="INT">80</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">100</MAX>
+          <RANK type="INT">3</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="RecogGXPolice">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR">地方警牌识别开关</CHNAME>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">3</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="CarArrivedPos">
+          <VALUE type="INT">49</VALUE>
+          <CHNAME type="STR">车辆到达位置(除黄牌外所有牌)</CHNAME>
+          <DEFAULT type="INT">65</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">100</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="BuleTriggerToYellowOffset">
+          <VALUE type="INT">8</VALUE>
+          <CHNAME type="STR">蓝牌触发线到黄牌触发线百分比</CHNAME>
+          <DEFAULT type="INT">8</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">100</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="MovingDirection">
+          <VALUE type="ENUM">4</VALUE>
+          <CHNAME type="STR">车辆行驶方向</CHNAME>
+          <COMMENT type="STR">0:由远及近;1:由近及远;4:任意方向</COMMENT>
+          <DEFAULT type="INT">4</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">4</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:由远及近;1:由近及远;4:任意方向</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="FilterReverseEnable">
+          <VALUE type="ENUM">0</VALUE>
+          <CHNAME type="STR">过滤逆行方向</CHNAME>
+          <COMMENT type="STR">0:不过滤;1:过滤</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:不过滤;1:过滤</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="nSpan">
+          <VALUE type="INT">5</VALUE>
+          <CHNAME type="STR">逆行方向阈值</CHNAME>
+          <DEFAULT type="INT">5</DEFAULT>
+          <MIN type="INT">-100</MIN>
+          <MAX type="INT">100</MAX>
+          <RANK type="INT">3</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="UsedLight">
+          <VALUE type="INT">0</VALUE>
+          <CHNAME type="STR">使用补光灯亮度控制</CHNAME>
+          <COMMENT type="STR">0不使用程序控制亮度;1使用程序控制亮度</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">3</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="EnableLog">
+          <VALUE type="INT">0</VALUE>
+          <CHNAME type="STR">使能算法日志</CHNAME>
+          <COMMENT type="STR">默认值:0,不使能:0,使能:1</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">3</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+      </SECTION>
+      <SECTION name="TrackInfo" cname=" ">
+        <KEY name="VoteFrameNum">
+          <VALUE type="INT">8</VALUE>
+          <CHNAME type="STR">投票的结果数</CHNAME>
+          <DEFAULT type="INT">8</DEFAULT>
+          <MIN type="INT">2</MIN>
+          <MAX type="INT">1000</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="MaxEqualFrameNumForVote">
+          <VALUE type="INT">3</VALUE>
+          <CHNAME type="STR">连续相同结果出牌条件</CHNAME>
+          <DEFAULT type="INT">3</DEFAULT>
+          <MIN type="INT">1</MIN>
+          <MAX type="INT">1000</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="BlockTwinsTimeout">
+          <VALUE type="INT">120</VALUE>
+          <CHNAME type="STR">相同结果最小时间间隔(S)</CHNAME>
+          <DEFAULT type="INT">120</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">3600</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="AverageConfidenceQuan">
+          <VALUE type="INT">0</VALUE>
+          <CHNAME type="STR">平均得分下限</CHNAME>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">65536</MAX>
+          <RANK type="INT">1</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="FirstConfidenceQuan">
+          <VALUE type="INT">0</VALUE>
+          <CHNAME type="STR">汉字得分下限</CHNAME>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">65536</MAX>
+          <RANK type="INT">3</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="RemoveLowConfForVote">
+          <VALUE type="INT">40</VALUE>
+          <CHNAME type="STR">投票前去掉低得分车牌百分比</CHNAME>
+          <DEFAULT type="INT">40</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">100</MAX>
+          <RANK type="INT">3</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+      </SECTION>
+    </SECTION>
+    <SECTION name="HvDsp" cname=" ">
+      <SECTION name="Misc" cname=" ">
+        <KEY name="IPNCLogOutput">
+          <VALUE type="ENUM">0</VALUE>
+          <CHNAME type="STR">输出IPNC日志信息</CHNAME>
+          <COMMENT type="STR">0:不输出;1:输出</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">3</RANK>
+          <ENUM type="STR">0:不输出;1:输出</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="OutputFilterInfo">
+          <VALUE type="ENUM">0</VALUE>
+          <CHNAME type="STR">输出后处理信息</CHNAME>
+          <COMMENT type="STR">0:不输出;1:输出</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">3</RANK>
+          <ENUM type="STR">0:不输出;1:输出</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="DrawRect">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR">发送图像画红框</CHNAME>
+          <COMMENT type="STR">0:不发送;1:发送</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">3</RANK>
+          <ENUM type="STR">0:不发送;1:发送</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="HDVideoEnable">
+          <VALUE type="ENUM">0</VALUE>
+          <CHNAME type="STR">硬盘录像开关</CHNAME>
+          <COMMENT type="STR">0:不录像;1:录像</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">3</RANK>
+          <ENUM type="STR">0:不录像;1:录像</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="SafeSaver">
+          <VALUE type="ENUM">0</VALUE>
+          <CHNAME type="STR">安全存储使能</CHNAME>
+          <COMMENT type="STR">0:不使能;1:使能</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">3</RANK>
+          <ENUM type="STR">0:不使能;1:使能</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="InitHdd">
+          <VALUE type="ENUM">0</VALUE>
+          <CHNAME type="STR">初始化硬盘。注：一次性有效</CHNAME>
+          <COMMENT type="STR">0:无;1:分区格式化</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">3</RANK>
+          <ENUM type="STR">0:无;1:分区格式化</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="OneFileSize">
+          <VALUE type="INT">512</VALUE>
+          <CHNAME type="STR">定长存储单个文件大小,(单位K)</CHNAME>
+          <DEFAULT type="INT">512</DEFAULT>
+          <MIN type="INT">1</MIN>
+          <MAX type="INT">1024</MAX>
+          <RANK type="INT">3</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="SaveSafeType">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR">固态硬盘存储方式</CHNAME>
+          <COMMENT type="STR">0:没有客户端连接时才存储;1:一直存储</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">3</RANK>
+          <ENUM type="STR">0:没有客户端连接时才存储;1:一直存储</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="DiskType">
+          <VALUE type="ENUM">2</VALUE>
+          <CHNAME type="STR">硬盘类型</CHNAME>
+          <COMMENT type="STR">2:SD卡</COMMENT>
+          <DEFAULT type="INT">2</DEFAULT>
+          <MIN type="INT">2</MIN>
+          <MAX type="INT">2</MAX>
+          <RANK type="INT">3</RANK>
+          <ENUM type="STR">2:SD卡</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="EnableNTP">
+          <VALUE type="ENUM">0</VALUE>
+          <CHNAME type="STR">NTP使能开关</CHNAME>
+          <COMMENT type="STR">0:不使能;1:使能</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:不使能;1:使能</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="NTPSyncInterval">
+          <VALUE type="INT">3600</VALUE>
+          <CHNAME type="STR">NTP时间同步间隔(单位秒)</CHNAME>
+          <DEFAULT type="INT">3600</DEFAULT>
+          <MIN type="INT">300</MIN>
+          <MAX type="INT">2147483647</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="NTPServerIP">
+          <VALUE type="STR">210.72.145.44</VALUE>
+          <CHNAME type="STR">NTP服务器IP地址</CHNAME>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="TimeZone">
+          <VALUE type="ENUM">20</VALUE>
+          <CHNAME type="STR">时区</CHNAME>
+          <COMMENT type="STR">0:GMT-12;1:GMT-11;2:GMT-10;3:GMT-09;4:GMT-08;5:GMT-07;6:GMT-06;7:GMT-05;8:GMT-04;9:GMT-03;10:GMT-02;11:GMT-01;12:GMT+00;13:GMT+01;14:GMT+02;15:GMT+03;16:GMT+04;17:GMT+05;18:GMT+06;19:GMT+07;20:GMT+08;21:GMT+09;22:GMT+10;23:GMT+11;24:GMT+12</COMMENT>
+          <DEFAULT type="INT">20</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">24</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:GMT-12;1:GMT-11;2:GMT-10;3:GMT-09;4:GMT-08;5:GMT-07;6:GMT-06;7:GMT-05;8:GMT-04;9:GMT-03;10:GMT-02;11:GMT-01;12:GMT+00;13:GMT+01;14:GMT+02;15:GMT+03;16:GMT+04;17:GMT+05;18:GMT+06;19:GMT+07;20:GMT+08;21:GMT+09;22:GMT+10;23:GMT+11;24:GMT+12</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="LoopReplaceEnable">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR">循环替换</CHNAME>
+          <COMMENT type="STR">0:不启用;1:启用</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:不启用;1:启用</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="SendRecordSpace">
+          <VALUE type="INT">5</VALUE>
+          <CHNAME type="STR">结果发送间隔(*100ms)</CHNAME>
+          <DEFAULT type="INT">5</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">100</MAX>
+          <RANK type="INT">3</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="SendHisVideoSpace">
+          <VALUE type="INT">3</VALUE>
+          <CHNAME type="STR">历史录像发送间隔(*100ms)</CHNAME>
+          <DEFAULT type="INT">3</DEFAULT>
+          <MIN type="INT">1</MIN>
+          <MAX type="INT">20</MAX>
+          <RANK type="INT">3</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="AutoLinkEnable">
+          <VALUE type="ENUM">0</VALUE>
+          <CHNAME type="STR">主动连接使能</CHNAME>
+          <COMMENT type="STR">0:不使能;1:使能</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">3</RANK>
+          <ENUM type="STR">0:不使能;1:使能</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="AutoLinkIP">
+          <VALUE type="STR">172.18.10.100</VALUE>
+          <CHNAME type="STR">主动连接服务器IP</CHNAME>
+          <RANK type="INT">3</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="AutoLinkPort">
+          <VALUE type="INT">0</VALUE>
+          <CHNAME type="STR">主动连接服务器端口</CHNAME>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">10000</MAX>
+          <RANK type="INT">3</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="OutputResultMode">
+          <VALUE type="ENUM">0</VALUE>
+          <CHNAME type="STR">视频和触发结果输出选择</CHNAME>
+          <COMMENT type="STR">0:只输出视频结果;1:只输出触发结果</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:只输出视频结果;1:只输出触发结果</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="UseSingleRecgnize">
+          <VALUE type="INT">1</VALUE>
+          <CHNAME type="STR">是否使用单帧识别; 0:不使用单帧识别;1:使用单帧识别</CHNAME>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="PlateHoldTime">
+          <VALUE type="INT">15000</VALUE>
+          <CHNAME type="STR">车牌保留时间(单位毫秒)(注: 选择只输出触发结果时该参数才生效)</CHNAME>
+          <DEFAULT type="INT">15000</DEFAULT>
+          <MIN type="INT">100</MIN>
+          <MAX type="INT">60000</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="SignalHoldTime">
+          <VALUE type="INT">1500</VALUE>
+          <CHNAME type="STR">信号保留时间(单位毫秒)(注: 选择只输出触发结果时该参数才生效)</CHNAME>
+          <DEFAULT type="INT">1500</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">60000</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="JPEGOutType">
+          <VALUE type="ENUM">0</VALUE>
+          <CHNAME type="STR">JPEG输出类型</CHNAME>
+          <COMMENT type="STR">0:全帧输出;1:10帧输出1帧JPEG</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:全帧输出;1:10帧输出1帧JPEG</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="FTPEnable">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR">启用FTP传输功能</CHNAME>
+          <COMMENT type="STR">0:不使能;1:使能</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:不使能;1:使能</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="FtpServerIPAddr">
+          <VALUE type="STR">172.18.11.54</VALUE>
+          <CHNAME type="STR">FTP服务器IP地址</CHNAME>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="FtpServerUserName">
+          <VALUE type="STR">FtpUser</VALUE>
+          <CHNAME type="STR">FTP服务器登陆用户名</CHNAME>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="FtpServerPasswordName">
+          <VALUE type="STR">123</VALUE>
+          <CHNAME type="STR">FTP服务器登陆密码</CHNAME>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+      </SECTION>
+      <SECTION name="FilterRule" cname=" ">
+        <KEY name="Compaty">
+          <VALUE type="STR">$NULL$</VALUE>
+          <CHNAME type="STR">通配符规则</CHNAME>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="Replace">
+          <VALUE type="STR">$NULL$</VALUE>
+          <CHNAME type="STR">替换规则</CHNAME>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="Leach">
+          <VALUE type="STR">$NULL$</VALUE>
+          <CHNAME type="STR">过滤规则</CHNAME>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+      </SECTION>
+      <SECTION name="Identify" cname=" ">
+        <KEY name="StreetName">
+          <VALUE type="STR">NULL</VALUE>
+          <CHNAME type="STR">路口名称</CHNAME>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="StreetDirection">
+          <VALUE type="STR">NULL</VALUE>
+          <CHNAME type="STR">路口方向</CHNAME>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+      </SECTION>
+      <SECTION name="VideoProc" cname=" ">
+        <SECTION name="MainVideo" cname=" ">
+          <KEY name="OutputBestSnap">
+            <VALUE type="ENUM">0</VALUE>
+            <CHNAME type="STR">主视频最清晰大图输出</CHNAME>
+            <COMMENT type="STR">0:不输出;1:输出</COMMENT>
+            <DEFAULT type="INT">0</DEFAULT>
+            <MIN type="INT">0</MIN>
+            <MAX type="INT">1</MAX>
+            <RANK type="INT">5</RANK>
+            <ENUM type="STR">0:不输出;1:输出</ENUM>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="OutputLastSnap">
+            <VALUE type="ENUM">1</VALUE>
+            <CHNAME type="STR">主视频最后大图输出</CHNAME>
+            <COMMENT type="STR">0:不输出;1:输出</COMMENT>
+            <DEFAULT type="INT">1</DEFAULT>
+            <MIN type="INT">0</MIN>
+            <MAX type="INT">1</MAX>
+            <RANK type="INT">5</RANK>
+            <ENUM type="STR">0:不输出;1:输出</ENUM>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+        </SECTION>
+      </SECTION>
+      <SECTION name="Trigger" cname=" ">
+        <KEY name="TriggerOutEnable">
+          <VALUE type="INT">0</VALUE>
+          <CHNAME type="STR">触发输出使能开关</CHNAME>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">3</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="TriggerOutNormalStatus">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR">触发输出常态控制</CHNAME>
+          <COMMENT type="STR">0:高电平;1:低电平</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">3</RANK>
+          <ENUM type="STR">0:高电平;1:低电平</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="TriggerOutPlusWidth">
+          <VALUE type="INT">5000</VALUE>
+          <CHNAME type="STR">触发输出通断时间，单位为ms</CHNAME>
+          <DEFAULT type="INT">5000</DEFAULT>
+          <MIN type="INT">100</MIN>
+          <MAX type="INT">30000</MAX>
+          <RANK type="INT">3</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+      </SECTION>
+      <SECTION name="Camera" cname=" ">
+        <SECTION name="Ctrl" cname=" ">
+          <KEY name="Addr">
+            <VALUE type="STR">172.18.23.42</VALUE>
+            <CHNAME type="STR">识别相机IP</CHNAME>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="ProtocolType">
+            <VALUE type="ENUM">0</VALUE>
+            <CHNAME type="STR">协议类型</CHNAME>
+            <COMMENT type="STR">0:一体机协议;1:测试协议</COMMENT>
+            <DEFAULT type="INT">0</DEFAULT>
+            <MIN type="INT">0</MIN>
+            <MAX type="INT">1</MAX>
+            <RANK type="INT">5</RANK>
+            <ENUM type="STR">0:一体机协议;1:测试协议</ENUM>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="AddrPort">
+            <VALUE type="INT">8888</VALUE>
+            <CHNAME type="STR">测试协议端口号</CHNAME>
+            <COMMENT type="STR">端口号</COMMENT>
+            <DEFAULT type="INT">8888</DEFAULT>
+            <MIN type="INT">1024</MIN>
+            <MAX type="INT">99999</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="DynamicCfgEnable">
+            <VALUE type="ENUM">0</VALUE>
+            <CHNAME type="STR">动态设置参数</CHNAME>
+            <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+            <DEFAULT type="INT">0</DEFAULT>
+            <MIN type="INT">0</MIN>
+            <MAX type="INT">1</MAX>
+            <RANK type="INT">5</RANK>
+            <ENUM type="STR">0:关闭;1:打开</ENUM>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="NightShutterThreshold">
+            <VALUE type="INT">8000</VALUE>
+            <CHNAME type="STR">夜晚判断快门阈值</CHNAME>
+            <DEFAULT type="INT">8000</DEFAULT>
+            <MIN type="INT">0</MIN>
+            <MAX type="INT">30000</MAX>
+            <RANK type="INT">3</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="NightAvgYThreshold">
+            <VALUE type="INT">65</VALUE>
+            <CHNAME type="STR">夜晚判断环境亮度阈值</CHNAME>
+            <DEFAULT type="INT">65</DEFAULT>
+            <MIN type="INT">0</MIN>
+            <MAX type="INT">255</MAX>
+            <RANK type="INT">3</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="MaxAGCLimit">
+            <VALUE type="INT">140</VALUE>
+            <CHNAME type="STR">最大AGC门限值</CHNAME>
+            <DEFAULT type="INT">140</DEFAULT>
+            <MIN type="INT">0</MIN>
+            <MAX type="INT">255</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="MinAGCLimit">
+            <VALUE type="INT">10</VALUE>
+            <CHNAME type="STR">最小AGC门限值</CHNAME>
+            <DEFAULT type="INT">10</DEFAULT>
+            <MIN type="INT">0</MIN>
+            <MAX type="INT">255</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="MinPSD">
+            <VALUE type="INT">26</VALUE>
+            <CHNAME type="STR">补光灯最小亮度值</CHNAME>
+            <DEFAULT type="INT">26</DEFAULT>
+            <MIN type="INT">0</MIN>
+            <MAX type="INT">100</MAX>
+            <RANK type="INT">3</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="MaxPSD">
+            <VALUE type="INT">40</VALUE>
+            <CHNAME type="STR">补光灯最大亮度值</CHNAME>
+            <DEFAULT type="INT">40</DEFAULT>
+            <MIN type="INT">26</MIN>
+            <MAX type="INT">255</MAX>
+            <RANK type="INT">3</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="CtrlCpl">
+            <VALUE type="ENUM">0</VALUE>
+            <CHNAME type="STR">自动控制偏光镜</CHNAME>
+            <COMMENT type="STR">0:不使能;1:使能</COMMENT>
+            <DEFAULT type="INT">0</DEFAULT>
+            <MIN type="INT">0</MIN>
+            <MAX type="INT">1</MAX>
+            <RANK type="INT">3</RANK>
+            <ENUM type="STR">0:不使能;1:使能</ENUM>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="LightTypeCpl">
+            <VALUE type="INT">7</VALUE>
+            <CHNAME type="STR">偏光镜自动切换的亮度等级阈值</CHNAME>
+            <DEFAULT type="INT">7</DEFAULT>
+            <MIN type="INT">0</MIN>
+            <MAX type="INT">13</MAX>
+            <RANK type="INT">3</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+        </SECTION>
+        <SECTION name="BigSuitlight" cname=" ">
+          <KEY name="ExposureTime">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">0级曝光时间</CHNAME>
+            <DEFAULT type="INT">8</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">30000</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="Plus">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">0级增益</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">360</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="AGCLimit">
+            <VALUE type="INT">10</VALUE>
+            <CHNAME type="STR">0级AGC增益门限</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">255</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+        </SECTION>
+        <SECTION name="BigSuitlight2" cname=" ">
+          <KEY name="ExposureTime">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">1级曝光时间</CHNAME>
+            <DEFAULT type="INT">8</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">30000</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="Plus">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">1级增益</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">360</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="AGCLimit">
+            <VALUE type="INT">20</VALUE>
+            <CHNAME type="STR">1级AGC增益门限</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">255</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+        </SECTION>
+        <SECTION name="Suitlight" cname=" ">
+          <KEY name="ExposureTime">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">2级曝光时间</CHNAME>
+            <DEFAULT type="INT">8</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">30000</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="Plus">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">2级增益</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">360</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="AGCLimit">
+            <VALUE type="INT">30</VALUE>
+            <CHNAME type="STR">2级AGC增益门限</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">255</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+        </SECTION>
+        <SECTION name="Suitlight2" cname=" ">
+          <KEY name="ExposureTime">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">3级曝光时间</CHNAME>
+            <DEFAULT type="INT">8</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">30000</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="Plus">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">3级增益</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">360</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="AGCLimit">
+            <VALUE type="INT">40</VALUE>
+            <CHNAME type="STR">3级AGC增益门限</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">255</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+        </SECTION>
+        <SECTION name="Day" cname=" ">
+          <KEY name="ExposureTime">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">4级曝光时间</CHNAME>
+            <DEFAULT type="INT">12</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">30000</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="Plus">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">4级增益</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">360</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="AGCLimit">
+            <VALUE type="INT">50</VALUE>
+            <CHNAME type="STR">4级AGC增益门限</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">255</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+        </SECTION>
+        <SECTION name="Day2" cname=" ">
+          <KEY name="ExposureTime">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">5级曝光时间</CHNAME>
+            <DEFAULT type="INT">17</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">30000</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="Plus">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">5级增益</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">360</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="AGCLimit">
+            <VALUE type="INT">60</VALUE>
+            <CHNAME type="STR">5级AGC增益门限</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">255</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+        </SECTION>
+        <SECTION name="Backlight" cname=" ">
+          <KEY name="ExposureTime">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">6级曝光时间</CHNAME>
+            <DEFAULT type="INT">24</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">30000</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="Plus">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">6级增益</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">360</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="AGCLimit">
+            <VALUE type="INT">70</VALUE>
+            <CHNAME type="STR">6级AGC增益门限</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">255</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+        </SECTION>
+        <SECTION name="Backlight2" cname=" ">
+          <KEY name="ExposureTime">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">7级曝光时间</CHNAME>
+            <DEFAULT type="INT">34</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">30000</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="Plus">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">7级增益</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">360</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="AGCLimit">
+            <VALUE type="INT">80</VALUE>
+            <CHNAME type="STR">7级AGC增益门限</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">255</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+        </SECTION>
+        <SECTION name="BigBacklight" cname=" ">
+          <KEY name="ExposureTime">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">8级曝光时间</CHNAME>
+            <DEFAULT type="INT">48</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">30000</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="Plus">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">8级增益</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">360</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="AGCLimit">
+            <VALUE type="INT">90</VALUE>
+            <CHNAME type="STR">8级AGC增益门限</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">255</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+        </SECTION>
+        <SECTION name="BigBacklight2" cname=" ">
+          <KEY name="ExposureTime">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">9级曝光时间</CHNAME>
+            <DEFAULT type="INT">68</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">30000</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="Plus">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">9级增益</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">360</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="AGCLimit">
+            <VALUE type="INT">100</VALUE>
+            <CHNAME type="STR">9级AGC增益门限</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">255</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+        </SECTION>
+        <SECTION name="Nightfall" cname=" ">
+          <KEY name="ExposureTime">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">10级曝光时间</CHNAME>
+            <DEFAULT type="INT">96</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">30000</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="Plus">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">10级增益</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">360</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="AGCLimit">
+            <VALUE type="INT">110</VALUE>
+            <CHNAME type="STR">10级AGC增益门限</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">255</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+        </SECTION>
+        <SECTION name="Nightfall2" cname=" ">
+          <KEY name="ExposureTime">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">11级曝光时间</CHNAME>
+            <DEFAULT type="INT">96</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">30000</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="Plus">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">11级增益</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">360</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="AGCLimit">
+            <VALUE type="INT">120</VALUE>
+            <CHNAME type="STR">11级AGC增益门限</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">255</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+        </SECTION>
+        <SECTION name="Night" cname=" ">
+          <KEY name="ExposureTime">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">12级曝光时间</CHNAME>
+            <DEFAULT type="INT">96</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">30000</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="Plus">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">12级增益</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">360</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="AGCLimit">
+            <VALUE type="INT">130</VALUE>
+            <CHNAME type="STR">12级AGC增益门限</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">255</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+        </SECTION>
+        <SECTION name="Night2" cname=" ">
+          <KEY name="ExposureTime">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">13级曝光时间</CHNAME>
+            <DEFAULT type="INT">96</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">30000</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="Plus">
+            <VALUE type="INT">-1</VALUE>
+            <CHNAME type="STR">13级增益</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">360</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+          <KEY name="AGCLimit">
+            <VALUE type="INT">140</VALUE>
+            <CHNAME type="STR">13级AGC增益门限</CHNAME>
+            <DEFAULT type="INT">-1</DEFAULT>
+            <MIN type="INT">-1</MIN>
+            <MAX type="INT">255</MAX>
+            <RANK type="INT">5</RANK>
+            <ONLYREAD type="INT">0</ONLYREAD>
+          </KEY>
+        </SECTION>
+      </SECTION>
+    </SECTION>
+    <SECTION name="OuterCtrl" cname="外总控">
+      <KEY name="RecogArea">
+        <VALUE type="STR">[0,50,100,100],7,11</VALUE>
+        <CHNAME type="STR">抓拍识别区域(%)[左,上,右,下],最小车牌，最大车牌</CHNAME>
+        <COMMENT type="STR">车牌宽度:0-56;1-61;2-67;3-74;4-81;5-90;6-99;7-109;8-120;9-132;10-145;11-159;12-175;13-193;14-212;15-233;16-257</COMMENT>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+    </SECTION>
+    <SECTION name="Device" cname="外部设备">
+      <SECTION name="COM1" cname="端口01备">
+        <KEY name="Baudrate">
+          <VALUE type="ENUM">9600</VALUE>
+          <CHNAME type="STR">波特率</CHNAME>
+          <COMMENT type="STR">300:300;600:600;1200:1200;2400:2400;4800:4800;9600:9600;19200:19200;38400:38400;43000:43000;56000:56000;57600:57600;115200:115200</COMMENT>
+          <DEFAULT type="INT">9600</DEFAULT>
+          <MIN type="INT">300</MIN>
+          <MAX type="INT">115200</MAX>
+          <RANK type="INT">3</RANK>
+          <ENUM type="STR">300:300;600:600;1200:1200;2400:2400;4800:4800;9600:9600;19200:19200;38400:38400;43000:43000;56000:56000;57600:57600;115200:115200</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="DeviceType">
+          <VALUE type="ENUM">0</VALUE>
+          <CHNAME type="STR">外部设备类型</CHNAME>
+          <COMMENT type="STR">0:无;1:川速雷达;2:苏江车检器;4:奥利维亚雷达;5:四川九洲雷达</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">5</MAX>
+          <RANK type="INT">3</RANK>
+          <ENUM type="STR">0:无;1:川速雷达;2:苏江车检器;4:奥利维亚雷达;5:四川九洲雷达</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="Road">
+          <VALUE type="INT">0</VALUE>
+          <CHNAME type="STR">所属车道编号</CHNAME>
+          <COMMENT type="STR">所属车道编号</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">255</MAX>
+          <RANK type="INT">3</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="CoilInstance">
+          <VALUE type="INT">50</VALUE>
+          <CHNAME type="STR">2个线圈的距离(分米)</CHNAME>
+          <COMMENT type="STR">线圈距离</COMMENT>
+          <DEFAULT type="INT">50</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">100</MAX>
+          <RANK type="INT">3</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+      </SECTION>
+    </SECTION>
+    <SECTION name="CamApp" cname=" ">
+      <KEY name="JpegCompressRate">
+        <VALUE type="INT">80</VALUE>
+        <CHNAME type="STR">视频流Jpeg压缩品质</CHNAME>
+        <DEFAULT type="INT">80</DEFAULT>
+        <MIN type="INT">1</MIN>
+        <MAX type="INT">99</MAX>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="IFrameInterval">
+        <VALUE type="INT">10</VALUE>
+        <CHNAME type="STR">H.264流I帧间隔</CHNAME>
+        <DEFAULT type="INT">10</DEFAULT>
+        <MIN type="INT">2</MIN>
+        <MAX type="INT">25</MAX>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="Resolution">
+        <VALUE type="ENUM">0</VALUE>
+        <CHNAME type="STR">H.264图像分辨率</CHNAME>
+        <COMMENT type="STR">0:1080P;1:720P</COMMENT>
+        <DEFAULT type="INT">0</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1</MAX>
+        <RANK type="INT">5</RANK>
+        <ENUM type="STR">0:1080P;1:720P</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="TargetBitRate">
+        <VALUE type="INT">1792</VALUE>
+        <CHNAME type="STR">H.264流输出比特率</CHNAME>
+        <COMMENT type="STR">单位：Kbps（千比特每秒）</COMMENT>
+        <DEFAULT type="INT">1792</DEFAULT>
+        <MIN type="INT">512</MIN>
+        <MAX type="INT">16384</MAX>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="IFrameIntervalSecond">
+        <VALUE type="INT">10</VALUE>
+        <CHNAME type="STR">第二路H.264流I帧间隔</CHNAME>
+        <DEFAULT type="INT">10</DEFAULT>
+        <MIN type="INT">2</MIN>
+        <MAX type="INT">25</MAX>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="ResolutionSecond">
+        <VALUE type="ENUM">3</VALUE>
+        <CHNAME type="STR">第二路H.264图像分辨率</CHNAME>
+        <COMMENT type="STR">0:1080P;1:720P;2:540P;3:576P;4:480P</COMMENT>
+        <DEFAULT type="INT">3</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">4</MAX>
+        <RANK type="INT">5</RANK>
+        <ENUM type="STR">0:1080P;1:720P;2:540P;3:576P;4:480P</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="TargetBitRateSecond">
+        <VALUE type="INT">1792</VALUE>
+        <CHNAME type="STR">第二路H.264流输出比特率</CHNAME>
+        <COMMENT type="STR">单位：Kbps（千比特每秒）</COMMENT>
+        <DEFAULT type="INT">1792</DEFAULT>
+        <MIN type="INT">512</MIN>
+        <MAX type="INT">16384</MAX>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <SECTION name="Crop" cname=" ">
+        <KEY name="CropNum">
+          <VALUE type="ENUM">3</VALUE>
+          <CHNAME type="STR">H.264剪切操作</CHNAME>
+          <COMMENT type="STR">只有在第一路码流选择1080P时才有效</COMMENT>
+          <DEFAULT type="INT">3</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">3</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:第一路;3:不使用剪切功能</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="CropX">
+          <VALUE type="INT">30</VALUE>
+          <CHNAME type="STR">H.264剪切坐标X</CHNAME>
+          <COMMENT type="STR">百分比</COMMENT>
+          <DEFAULT type="INT">30</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">100</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="CropY">
+          <VALUE type="INT">45</VALUE>
+          <CHNAME type="STR">H.264剪切坐标Y</CHNAME>
+          <COMMENT type="STR">百分比</COMMENT>
+          <DEFAULT type="INT">45</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">100</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="CropWidth">
+          <VALUE type="INT">51</VALUE>
+          <CHNAME type="STR">H.264剪切宽度</CHNAME>
+          <COMMENT type="STR">百分比</COMMENT>
+          <DEFAULT type="INT">51</DEFAULT>
+          <MIN type="INT">10</MIN>
+          <MAX type="INT">100</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="CropHeight">
+          <VALUE type="INT">54</VALUE>
+          <CHNAME type="STR">H.264剪切高度</CHNAME>
+          <COMMENT type="STR">百分比</COMMENT>
+          <DEFAULT type="INT">54</DEFAULT>
+          <MIN type="INT">10</MIN>
+          <MAX type="INT">100</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+      </SECTION>
+      <KEY name="FrameRateSecond">
+        <VALUE type="INT">25</VALUE>
+        <CHNAME type="STR">第二路H.264流输出帧率</CHNAME>
+        <COMMENT type="STR">单位：fps（帧每秒）</COMMENT>
+        <DEFAULT type="INT">25</DEFAULT>
+        <MIN type="INT">15</MIN>
+        <MAX type="INT">25</MAX>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="AGCTh">
+        <VALUE type="INT">100</VALUE>
+        <CHNAME type="STR">AGC测光基准值</CHNAME>
+        <DEFAULT type="INT">100</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">255</MAX>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="AGCShutterLOri">
+        <VALUE type="INT">10</VALUE>
+        <CHNAME type="STR">AGC快门调节下限</CHNAME>
+        <DEFAULT type="INT">10</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">30000</MAX>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="AGCShutterHOri">
+        <VALUE type="INT">10000</VALUE>
+        <CHNAME type="STR">AGC快门调节上限</CHNAME>
+        <DEFAULT type="INT">10000</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">30000</MAX>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="AGCGainLOri">
+        <VALUE type="INT">10</VALUE>
+        <CHNAME type="STR">AGC增益调节下限</CHNAME>
+        <DEFAULT type="INT">10</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">480</MAX>
+        <RANK type="INT">3</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="AGCGainHOri">
+        <VALUE type="INT">70</VALUE>
+        <CHNAME type="STR">AGC增益调节上限</CHNAME>
+        <DEFAULT type="INT">70</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">480</MAX>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="AGCScene">
+        <VALUE type="ENUM">1</VALUE>
+        <CHNAME type="STR">情景模式</CHNAME>
+        <COMMENT type="STR">0:自动;1:偏暗;</COMMENT>
+        <DEFAULT type="INT">1</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1</MAX>
+        <RANK type="INT">5</RANK>
+        <ENUM type="STR">0:自动;1:偏暗;</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="GainR">
+        <VALUE type="INT">66</VALUE>
+        <CHNAME type="STR">白平衡R通道</CHNAME>
+        <DEFAULT type="INT">36</DEFAULT>
+        <MIN type="INT">36</MIN>
+        <MAX type="INT">255</MAX>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="GainG">
+        <VALUE type="INT">36</VALUE>
+        <CHNAME type="STR">白平衡G通道</CHNAME>
+        <DEFAULT type="INT">36</DEFAULT>
+        <MIN type="INT">36</MIN>
+        <MAX type="INT">255</MAX>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="GainB">
+        <VALUE type="INT">62</VALUE>
+        <CHNAME type="STR">白平衡B通道</CHNAME>
+        <DEFAULT type="INT">36</DEFAULT>
+        <MIN type="INT">36</MIN>
+        <MAX type="INT">255</MAX>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="Gain">
+        <VALUE type="INT">18</VALUE>
+        <CHNAME type="STR">增益</CHNAME>
+        <DEFAULT type="INT">10</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">480</MAX>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="Shutter">
+        <VALUE type="INT">9773</VALUE>
+        <CHNAME type="STR">快门</CHNAME>
+        <COMMENT type="STR">单位：us</COMMENT>
+        <DEFAULT type="INT">2000</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">30000</MAX>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="JpegAutoCompressEnable">
+        <VALUE type="ENUM">0</VALUE>
+        <CHNAME type="STR">Jpeg自动调节开关</CHNAME>
+        <COMMENT type="STR">0:不使能;1:使能</COMMENT>
+        <DEFAULT type="INT">0</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1</MAX>
+        <RANK type="INT">5</RANK>
+        <ENUM type="STR">0:不使能;1:使能</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="JpegExpectSize">
+        <VALUE type="INT">0</VALUE>
+        <CHNAME type="STR">Jpeg图片期望大小</CHNAME>
+        <COMMENT type="STR">单位：Byte（字节）注：为0则表示忽略该参数</COMMENT>
+        <DEFAULT type="INT">0</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1048576</MAX>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="JpegType">
+        <VALUE type="ENUM">0</VALUE>
+        <CHNAME type="STR">Jpeg图片格式</CHNAME>
+        <COMMENT type="STR">0:YUV分开;1:YUV混合</COMMENT>
+        <DEFAULT type="INT">0</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1</MAX>
+        <RANK type="INT">3</RANK>
+        <ENUM type="STR">0:YUV分开;1:YUV混合</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="JpegCompressRateLow">
+        <VALUE type="INT">15</VALUE>
+        <CHNAME type="STR">Jpeg压缩率自动调节下限</CHNAME>
+        <DEFAULT type="INT">15</DEFAULT>
+        <MIN type="INT">1</MIN>
+        <MAX type="INT">79</MAX>
+        <RANK type="INT">3</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="JpegCompressRateHigh">
+        <VALUE type="INT">80</VALUE>
+        <CHNAME type="STR">Jpeg压缩率自动调节上限</CHNAME>
+        <DEFAULT type="INT">80</DEFAULT>
+        <MIN type="INT">1</MIN>
+        <MAX type="INT">100</MAX>
+        <RANK type="INT">3</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="AGCEnable">
+        <VALUE type="ENUM">1</VALUE>
+        <CHNAME type="STR">AGC使能</CHNAME>
+        <COMMENT type="STR">0:不使能;1:使能</COMMENT>
+        <DEFAULT type="INT">1</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1</MAX>
+        <RANK type="INT">5</RANK>
+        <ENUM type="STR">0:不使能;1:使能</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="AWBMode">
+        <VALUE type="ENUM">0</VALUE>
+        <CHNAME type="STR">AWB工作模式</CHNAME>
+        <COMMENT type="STR">0:正常情况下使用;1:在纳灯环境,晚上环境光偏黄的情况下使用</COMMENT>
+        <DEFAULT type="INT">0</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1</MAX>
+        <RANK type="INT">5</RANK>
+        <ENUM type="STR">0:自动白平衡;1:灰度白平衡</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="AWBEnable">
+        <VALUE type="ENUM">1</VALUE>
+        <CHNAME type="STR">AWB使能</CHNAME>
+        <COMMENT type="STR">0:不使能;1:使能</COMMENT>
+        <DEFAULT type="INT">1</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1</MAX>
+        <RANK type="INT">5</RANK>
+        <ENUM type="STR">0:不使能;1:使能</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="CaptureSynOutputType">
+        <VALUE type="ENUM">1</VALUE>
+        <CHNAME type="STR">抓拍输出类型</CHNAME>
+        <COMMENT type="STR">0:上拉(电平);1:OC（开关）</COMMENT>
+        <DEFAULT type="INT">1</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1</MAX>
+        <RANK type="INT">3</RANK>
+        <ENUM type="STR">0:上拉(电平);1:OC（开关）</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="ExternSyncMode">
+        <VALUE type="ENUM">1</VALUE>
+        <CHNAME type="STR">外同步模式</CHNAME>
+        <COMMENT type="STR">0:不同步;1:内部电网同步</COMMENT>
+        <DEFAULT type="INT">1</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1</MAX>
+        <RANK type="INT">5</RANK>
+        <ENUM type="STR">0:不同步;1:内部电网同步</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="SyncRelay">
+        <VALUE type="INT">2200</VALUE>
+        <CHNAME type="STR">外同步信号延时</CHNAME>
+        <COMMENT type="STR">单位:微秒</COMMENT>
+        <DEFAULT type="INT">2200</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">20000</MAX>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="CaptureEdge">
+        <VALUE type="ENUM">1</VALUE>
+        <CHNAME type="STR">触发抓拍沿</CHNAME>
+        <COMMENT type="STR">0:不触发;1:外部下降沿触发;2:外部上升沿触发;3:上升沿下降沿都触发</COMMENT>
+        <DEFAULT type="INT">1</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">3</MAX>
+        <RANK type="INT">5</RANK>
+        <ENUM type="STR">0:不触发;1:外部下降沿触发;2:外部上升沿触发;3:上升沿下降沿都触发</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <SECTION name="AGCZone" cname=" ">
+        <KEY name="AGC1">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR"/>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="AGC2">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR"/>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="AGC3">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR"/>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="AGC4">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR"/>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="AGC5">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR"/>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="AGC6">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR"/>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="AGC7">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR"/>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="AGC8">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR"/>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="AGC9">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR"/>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="AGC10">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR"/>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="AGC11">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR"/>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="AGC12">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR"/>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="AGC13">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR"/>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="AGC14">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR"/>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="AGC15">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR"/>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="AGC16">
+          <VALUE type="ENUM">1</VALUE>
+          <CHNAME type="STR"/>
+          <COMMENT type="STR">0:关闭;1:打开</COMMENT>
+          <DEFAULT type="INT">1</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:关闭;1:打开</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+      </SECTION>
+      <KEY name="ColorMatrixMode">
+        <VALUE type="ENUM">1</VALUE>
+        <CHNAME type="STR">图像增强</CHNAME>
+        <COMMENT type="STR">0:不使能;1:使能</COMMENT>
+        <DEFAULT type="INT">1</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1</MAX>
+        <RANK type="INT">3</RANK>
+        <ENUM type="STR">0:不使能;1:使能</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="ContrastValue">
+        <VALUE type="INT">16</VALUE>
+        <CHNAME type="STR">对比度</CHNAME>
+        <DEFAULT type="INT">16</DEFAULT>
+        <MIN type="INT">10</MIN>
+        <MAX type="INT">100</MAX>
+        <RANK type="INT">3</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="SaturationValue">
+        <VALUE type="INT">0</VALUE>
+        <CHNAME type="STR">饱和度</CHNAME>
+        <DEFAULT type="INT">0</DEFAULT>
+        <MIN type="INT">-100</MIN>
+        <MAX type="INT">100</MAX>
+        <RANK type="INT">3</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="WDRThreshold">
+        <VALUE type="INT">320</VALUE>
+        <CHNAME type="STR">WDR强度</CHNAME>
+        <DEFAULT type="INT">320</DEFAULT>
+        <MIN type="INT">1</MIN>
+        <MAX type="INT">1000</MAX>
+        <RANK type="INT">3</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="NoiseReduction">
+        <VALUE type="ENUM">3</VALUE>
+        <CHNAME type="STR">降噪模式</CHNAME>
+        <COMMENT type="STR">0:不使能;3:使能</COMMENT>
+        <DEFAULT type="INT">3</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">3</MAX>
+        <RANK type="INT">5</RANK>
+        <ENUM type="STR">0:不使能;3:使能</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="NoiseReductionThreshold">
+        <VALUE type="ENUM">1</VALUE>
+        <CHNAME type="STR">降噪强度</CHNAME>
+        <COMMENT type="STR">1:低;2:中</COMMENT>
+        <DEFAULT type="INT">1</DEFAULT>
+        <MIN type="INT">1</MIN>
+        <MAX type="INT">2</MAX>
+        <RANK type="INT">5</RANK>
+        <ENUM type="STR">1:低;2:中</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="CVBSMode">
+        <VALUE type="ENUM">0</VALUE>
+        <CHNAME type="STR">CVBS制式</CHNAME>
+        <COMMENT type="STR">0:PAL;1:NTSC</COMMENT>
+        <DEFAULT type="INT">0</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1</MAX>
+        <RANK type="INT">5</RANK>
+        <ENUM type="STR">0:PAL;1:NTSC</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="BlackWhiteMode">
+        <VALUE type="ENUM">0</VALUE>
+        <CHNAME type="STR">黑白图输出模式</CHNAME>
+        <COMMENT type="STR">0:不使能;1:使能 </COMMENT>
+        <DEFAULT type="INT">0</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1</MAX>
+        <RANK type="INT">5</RANK>
+        <ENUM type="STR">0:不使能;1:使能 </ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="EdgeValue">
+        <VALUE type="INT">128</VALUE>
+        <CHNAME type="STR">图像边缘增强</CHNAME>
+        <COMMENT type="STR">图像边缘增强</COMMENT>
+        <DEFAULT type="INT">128</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">255</MAX>
+        <RANK type="INT">3</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="LEDPolarity">
+        <VALUE type="ENUM">1</VALUE>
+        <CHNAME type="STR">补光灯控制极性</CHNAME>
+        <COMMENT type="STR">0:负极性;1:正极性</COMMENT>
+        <DEFAULT type="INT">1</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1</MAX>
+        <RANK type="INT">3</RANK>
+        <ENUM type="STR">0:负极性;1:正极性</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="LEDOutputType">
+        <VALUE type="ENUM">0</VALUE>
+        <CHNAME type="STR">补光灯输出类型</CHNAME>
+        <COMMENT type="STR">0:上拉（电平）;1:OC(开关)</COMMENT>
+        <DEFAULT type="INT">0</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1</MAX>
+        <RANK type="INT">3</RANK>
+        <ENUM type="STR">0:上拉（电平）;1:OC(开关)</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="ALMPolarity">
+        <VALUE type="ENUM">1</VALUE>
+        <CHNAME type="STR">报警控制极性</CHNAME>
+        <COMMENT type="STR">0:负极性;1:正极性</COMMENT>
+        <DEFAULT type="INT">1</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1</MAX>
+        <RANK type="INT">3</RANK>
+        <ENUM type="STR">0:负极性;1:正极性</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="ALMOutputType">
+        <VALUE type="ENUM">0</VALUE>
+        <CHNAME type="STR">报警输出类型</CHNAME>
+        <COMMENT type="STR">0:上拉（电平）;1:OC(开关)</COMMENT>
+        <DEFAULT type="INT">0</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1</MAX>
+        <RANK type="INT">3</RANK>
+        <ENUM type="STR">0:上拉（电平）;1:OC(开关)</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="F1OutputType">
+        <VALUE type="ENUM">0</VALUE>
+        <CHNAME type="STR">F1输出类型</CHNAME>
+        <COMMENT type="STR">0:栏杆机输出信号;1:闪光灯输出信号</COMMENT>
+        <DEFAULT type="INT">0</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1</MAX>
+        <RANK type="INT">3</RANK>
+        <ENUM type="STR">0:栏杆机输出信号;1:闪光灯输出信号</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="ColorGradation">
+        <VALUE type="ENUM">0</VALUE>
+        <CHNAME type="STR">色阶</CHNAME>
+        <COMMENT type="STR">色阶</COMMENT>
+        <DEFAULT type="INT">0</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1</MAX>
+        <RANK type="INT">3</RANK>
+        <ENUM type="STR">0:0~255;1:16~234</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="CVBSIMAGEMode">
+        <VALUE type="ENUM">0</VALUE>
+        <CHNAME type="STR">CVBS图像模式</CHNAME>
+        <COMMENT type="STR">0:CVBS 缩小输出;1:CVBS 剪切输出;2:自定义剪切输出</COMMENT>
+        <DEFAULT type="INT">0</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">2</MAX>
+        <RANK type="INT">5</RANK>
+        <ENUM type="STR">0:CVBS 缩小输出;1:CVBS 剪切输出;2:自定义剪切输出</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="CVBSCropStartX">
+        <VALUE type="INT">600</VALUE>
+        <CHNAME type="STR">CVBS裁剪模式起始横坐标</CHNAME>
+        <COMMENT type="STR">CVBS裁剪模式起始横坐标</COMMENT>
+        <DEFAULT type="INT">600</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1199</MAX>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="CVBSCropStartY">
+        <VALUE type="INT">252</VALUE>
+        <CHNAME type="STR">CVBS裁剪模式起始纵坐标</CHNAME>
+        <COMMENT type="STR">CVBS裁剪模式起始纵坐标</COMMENT>
+        <DEFAULT type="INT">252</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">503</MAX>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+    </SECTION>
+    <SECTION name="Overlay" cname=" ">
+      <SECTION name="H264" cname=" ">
+        <KEY name="Enable">
+          <VALUE type="ENUM">0</VALUE>
+          <CHNAME type="STR">H264字符叠加使能</CHNAME>
+          <COMMENT type="STR">0:不使能;1:使能</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:不使能;1:使能</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="X">
+          <VALUE type="INT">0</VALUE>
+          <CHNAME type="STR">X坐标</CHNAME>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1920</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="Y">
+          <VALUE type="INT">0</VALUE>
+          <CHNAME type="STR">Y坐标</CHNAME>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1080</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="Size">
+          <VALUE type="INT">32</VALUE>
+          <CHNAME type="STR">字体大小</CHNAME>
+          <DEFAULT type="INT">32</DEFAULT>
+          <MIN type="INT">16</MIN>
+          <MAX type="INT">128</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="R">
+          <VALUE type="INT">255</VALUE>
+          <CHNAME type="STR">字体颜色R分量</CHNAME>
+          <DEFAULT type="INT">255</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">255</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="G">
+          <VALUE type="INT">0</VALUE>
+          <CHNAME type="STR">字体颜色G分量</CHNAME>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">255</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="B">
+          <VALUE type="INT">0</VALUE>
+          <CHNAME type="STR">字体颜色B分量</CHNAME>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">255</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="DateTime">
+          <VALUE type="ENUM">0</VALUE>
+          <CHNAME type="STR">叠加时间</CHNAME>
+          <COMMENT type="STR">0:不使能;1:使能</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:不使能;1:使能</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="String">
+          <VALUE type="STR">H264流字符叠加样例</VALUE>
+          <CHNAME type="STR"/>
+          <COMMENT type="STR">叠加信息</COMMENT>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+      </SECTION>
+      <SECTION name="H264Second" cname=" ">
+        <KEY name="Enable">
+          <VALUE type="ENUM">0</VALUE>
+          <CHNAME type="STR">H264字符叠加使能</CHNAME>
+          <COMMENT type="STR">0:不使能;1:使能</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:不使能;1:使能</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="X">
+          <VALUE type="INT">0</VALUE>
+          <CHNAME type="STR">X坐标</CHNAME>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1920</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="Y">
+          <VALUE type="INT">0</VALUE>
+          <CHNAME type="STR">Y坐标</CHNAME>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1080</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="Size">
+          <VALUE type="INT">32</VALUE>
+          <CHNAME type="STR">字体大小</CHNAME>
+          <DEFAULT type="INT">32</DEFAULT>
+          <MIN type="INT">16</MIN>
+          <MAX type="INT">128</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="R">
+          <VALUE type="INT">255</VALUE>
+          <CHNAME type="STR">字体颜色R分量</CHNAME>
+          <DEFAULT type="INT">255</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">255</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="G">
+          <VALUE type="INT">0</VALUE>
+          <CHNAME type="STR">字体颜色G分量</CHNAME>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">255</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="B">
+          <VALUE type="INT">0</VALUE>
+          <CHNAME type="STR">字体颜色B分量</CHNAME>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">255</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="DateTime">
+          <VALUE type="ENUM">0</VALUE>
+          <CHNAME type="STR">叠加时间</CHNAME>
+          <COMMENT type="STR">0:不使能;1:使能</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:不使能;1:使能</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="String">
+          <VALUE type="STR">第二路H264流字符叠加样例</VALUE>
+          <CHNAME type="STR"/>
+          <COMMENT type="STR">叠加信息</COMMENT>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+      </SECTION>
+      <SECTION name="JPEG" cname=" ">
+        <KEY name="Enable">
+          <VALUE type="ENUM">0</VALUE>
+          <CHNAME type="STR">JPEG字符叠加使能</CHNAME>
+          <COMMENT type="STR">0:不使能;1:使能</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:不使能;1:使能</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="X">
+          <VALUE type="INT">0</VALUE>
+          <CHNAME type="STR">X坐标</CHNAME>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1920</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="Y">
+          <VALUE type="INT">0</VALUE>
+          <CHNAME type="STR">Y坐标</CHNAME>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1080</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="Size">
+          <VALUE type="INT">32</VALUE>
+          <CHNAME type="STR">字体大小</CHNAME>
+          <DEFAULT type="INT">32</DEFAULT>
+          <MIN type="INT">16</MIN>
+          <MAX type="INT">128</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="R">
+          <VALUE type="INT">255</VALUE>
+          <CHNAME type="STR">字体颜色R分量</CHNAME>
+          <DEFAULT type="INT">255</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">255</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="G">
+          <VALUE type="INT">0</VALUE>
+          <CHNAME type="STR">字体颜色G分量</CHNAME>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">255</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="B">
+          <VALUE type="INT">0</VALUE>
+          <CHNAME type="STR">字体颜色B分量</CHNAME>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">255</MAX>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="DateTime">
+          <VALUE type="ENUM">0</VALUE>
+          <CHNAME type="STR">叠加时间</CHNAME>
+          <COMMENT type="STR">0:不使能;1:使能</COMMENT>
+          <DEFAULT type="INT">0</DEFAULT>
+          <MIN type="INT">0</MIN>
+          <MAX type="INT">1</MAX>
+          <RANK type="INT">5</RANK>
+          <ENUM type="STR">0:不使能;1:使能</ENUM>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+        <KEY name="String">
+          <VALUE type="STR">JPEG流字符叠加样例</VALUE>
+          <CHNAME type="STR"/>
+          <COMMENT type="STR">叠加信息</COMMENT>
+          <RANK type="INT">5</RANK>
+          <ONLYREAD type="INT">0</ONLYREAD>
+        </KEY>
+      </SECTION>
+    </SECTION>
+    <SECTION name="SIP" cname=" ">
+      <KEY name="Enable">
+        <VALUE type="ENUM">0</VALUE>
+        <CHNAME type="STR">开关</CHNAME>
+        <COMMENT type="STR">0:关闭;1:开启</COMMENT>
+        <DEFAULT type="INT">0</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1</MAX>
+        <RANK type="INT">5</RANK>
+        <ENUM type="STR">0:关闭;1:开启</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="Expires">
+        <VALUE type="INT">86400</VALUE>
+        <CHNAME type="STR">注册过期时间</CHNAME>
+        <COMMENT type="STR">单位:秒  最短1小时，最长1天</COMMENT>
+        <DEFAULT type="INT">86400</DEFAULT>
+        <MIN type="INT">3600</MIN>
+        <MAX type="INT">86400</MAX>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="KeepalivePeriod">
+        <VALUE type="INT">60</VALUE>
+        <CHNAME type="STR">心跳发送间隔时间</CHNAME>
+        <COMMENT type="STR">单位:秒  最短1秒，最长1小时</COMMENT>
+        <DEFAULT type="INT">60</DEFAULT>
+        <MIN type="INT">1</MIN>
+        <MAX type="INT">3600</MAX>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="KeepaliveTimeoutCount">
+        <VALUE type="INT">3</VALUE>
+        <CHNAME type="STR">心跳超时次数</CHNAME>
+        <COMMENT type="STR">表示多少个心跳无相应后证明已断开</COMMENT>
+        <DEFAULT type="INT">3</DEFAULT>
+        <MIN type="INT">1</MIN>
+        <MAX type="INT">100</MAX>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="ServerID">
+        <VALUE type="STR">34020000002000000001</VALUE>
+        <CHNAME type="STR">服务器ID</CHNAME>
+        <COMMENT type="STR">服务器ID</COMMENT>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="ServerRegion">
+        <VALUE type="STR">3402000000</VALUE>
+        <CHNAME type="STR">服务器域</CHNAME>
+        <COMMENT type="STR">服务器域 为空默默认区服务器ID前10位</COMMENT>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="IPC_ID">
+        <VALUE type="STR">34020000001320000001</VALUE>
+        <CHNAME type="STR">设备ID</CHNAME>
+        <COMMENT type="STR">设备ID</COMMENT>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="IPC_Region">
+        <VALUE type="STR">3402000000</VALUE>
+        <CHNAME type="STR">设备域</CHNAME>
+        <COMMENT type="STR">设备域 为空默默认区设备ID前10位</COMMENT>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="szAlarmID">
+        <VALUE type="STR">34020000001340000001</VALUE>
+        <CHNAME type="STR">报警ID</CHNAME>
+        <COMMENT type="STR">报警ID</COMMENT>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="szPassWord">
+        <VALUE type="STR">12345678</VALUE>
+        <CHNAME type="STR">注册密码</CHNAME>
+        <COMMENT type="STR">注册密码</COMMENT>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="ServerIP">
+        <VALUE type="STR">172.18.10.113</VALUE>
+        <CHNAME type="STR">服务器IP地址</CHNAME>
+        <COMMENT type="STR">服务器IP地址</COMMENT>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="ServerPort">
+        <VALUE type="INT">5060</VALUE>
+        <CHNAME type="STR">服务器端口</CHNAME>
+        <DEFAULT type="INT">5060</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">10000</MAX>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="VideoSaveEnable">
+        <VALUE type="ENUM">0</VALUE>
+        <CHNAME type="STR">控制录像存储开关</CHNAME>
+        <COMMENT type="STR">是否实时控制录像存储开关。响应手动录像和手动停止录像</COMMENT>
+        <DEFAULT type="INT">0</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1</MAX>
+        <RANK type="INT">5</RANK>
+        <ENUM type="STR">0:关闭;1:开启</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="IPC_Port">
+        <VALUE type="INT">5060</VALUE>
+        <CHNAME type="STR">设备消息监听端口</CHNAME>
+        <DEFAULT type="INT">5060</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">10000</MAX>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="IPC_VideoPort">
+        <VALUE type="INT">5080</VALUE>
+        <CHNAME type="STR">设备媒体发送端口</CHNAME>
+        <DEFAULT type="INT">5080</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">10000</MAX>
+        <RANK type="INT">5</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="szLongitude">
+        <VALUE type="STR">0.0</VALUE>
+        <CHNAME type="STR">经度</CHNAME>
+        <COMMENT type="STR">经度</COMMENT>
+        <RANK type="INT">3</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="szLatitude">
+        <VALUE type="STR">0.0</VALUE>
+        <CHNAME type="STR">纬度</CHNAME>
+        <COMMENT type="STR">纬度</COMMENT>
+        <RANK type="INT">3</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="szManufacturer">
+        <VALUE type="STR">NULL</VALUE>
+        <CHNAME type="STR">厂家</CHNAME>
+        <COMMENT type="STR">厂家</COMMENT>
+        <RANK type="INT">3</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="szModel">
+        <VALUE type="STR">PCC200</VALUE>
+        <CHNAME type="STR">型号</CHNAME>
+        <COMMENT type="STR">设备型号</COMMENT>
+        <RANK type="INT">3</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="szBlock">
+        <VALUE type="STR">null</VALUE>
+        <CHNAME type="STR">警区</CHNAME>
+        <COMMENT type="STR">警区</COMMENT>
+        <RANK type="INT">3</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="szAddress">
+        <VALUE type="STR">null</VALUE>
+        <CHNAME type="STR">安装地址</CHNAME>
+        <COMMENT type="STR">安装地址</COMMENT>
+        <RANK type="INT">3</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="szOwner">
+        <VALUE type="STR">null</VALUE>
+        <CHNAME type="STR">设备归属</CHNAME>
+        <COMMENT type="STR">设备归属</COMMENT>
+        <RANK type="INT">3</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="szCivilCode">
+        <VALUE type="STR">null</VALUE>
+        <CHNAME type="STR">行政区域</CHNAME>
+        <COMMENT type="STR">行政区域</COMMENT>
+        <RANK type="INT">3</RANK>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+    </SECTION>
+    <SECTION name="ONVIF" cname=" ">
+      <KEY name="OnvifEnable">
+        <VALUE type="ENUM">1</VALUE>
+        <CHNAME type="STR">开关</CHNAME>
+        <COMMENT type="STR">0:不使能;1:使能</COMMENT>
+        <DEFAULT type="INT">1</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1</MAX>
+        <RANK type="INT">3</RANK>
+        <ENUM type="STR">0:不使能;1:使能</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="AuthenticateEnable">
+        <VALUE type="ENUM">0</VALUE>
+        <CHNAME type="STR">鉴权</CHNAME>
+        <COMMENT type="STR">使能时需要用户密码才能进行操作</COMMENT>
+        <DEFAULT type="INT">0</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1</MAX>
+        <RANK type="INT">3</RANK>
+        <ENUM type="STR">0:不使能;1:使能</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="UseIpType">
+        <VALUE type="ENUM">0</VALUE>
+        <CHNAME type="STR">绑定IP类型</CHNAME>
+        <COMMENT type="STR">0:主IP;1:备用IP;对应绑定IP的网络才能连上onvif</COMMENT>
+        <DEFAULT type="INT">0</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1</MAX>
+        <RANK type="INT">5</RANK>
+        <ENUM type="STR">0:主IP;1:备用IP</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+      <KEY name="AutoControlBitrateEnable">
+        <VALUE type="ENUM">1</VALUE>
+        <CHNAME type="STR">自动控制码率开关</CHNAME>
+        <COMMENT type="STR">当网络出现拥塞会自动控制码率适应网络</COMMENT>
+        <DEFAULT type="INT">1</DEFAULT>
+        <MIN type="INT">0</MIN>
+        <MAX type="INT">1</MAX>
+        <RANK type="INT">3</RANK>
+        <ENUM type="STR">0:不使能;1:使能</ENUM>
+        <ONLYREAD type="INT">0</ONLYREAD>
+      </KEY>
+    </SECTION>
+  </HvParam>
+</HvParamDoc>
